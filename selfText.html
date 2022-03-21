@@ -10,8 +10,10 @@
     <script>
       function inverse(collection) {
         let result = {};
-        for (var prop in collection) {
+        for (let prop in collection) {
+          collection[prop] += "";
           result[collection[prop]] = prop;
+          console.log(typeof collection[prop]);
         }
         console.log(result);
       }
