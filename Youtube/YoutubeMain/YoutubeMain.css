@@ -1,12 +1,32 @@
 main {
   margin-left: 200px;
-  display: flex;
-  flex: 1;
+  /* display: flex;
+  flex: 1; */
   overflow: auto;
   padding: 50px 5vw;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  /* grid-auto-flow: row;*/
 }
+@media (max-width: 1600px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1400px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
 .mainContainer {
   width: 330px;
   height: 280px;
@@ -16,8 +36,7 @@ main {
   cursor: pointer;
 }
 .mainImage {
-  width: 330px;
-  height: 180px;
+  width: 100%;
 }
 .secondContainer {
   display: flex;
@@ -44,4 +63,14 @@ main {
 .userInformation {
   font-size: 13px;
   color: grey;
+}
+
+.YoutubeWatch {
+  text-decoration-line: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
 }
