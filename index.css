@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: white;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.52);
+  color: white;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 200px;
+}
+.link {
+  margin-top: 30px;
+}
+.information {
+  margin-bottom: 30px;
+}
+main {
+  position: relative;
+  margin-left: 200px;
+}
+.background-image {
+  background-image: url("/indeximg/KakaoTalk_20220322_153948209.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.52);
+  background-blend-mode: multiply;
+}
+.mainText {
+  position: absolute;
+  top: 30vh;
+  right: 40vw;
+  font-weight: bold;
+  color: white;
+  min-width: 600px;
+  font-size: 20px;
+  text-align: center;
+}
+.Myname {
+  font-size: 50px;
+}
