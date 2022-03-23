@@ -1,5 +1,4 @@
 body {
-  display: flex;
   margin: 0px;
 }
 a {
@@ -14,7 +13,6 @@ a:visited {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.52);
   color: white;
-  width: 200px;
   height: 100vh;
   position: fixed;
   align-items: center;
@@ -30,6 +28,9 @@ a:visited {
 main {
   position: relative;
   margin-left: 200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .background-image {
   background-image: url("/indeximg/KakaoTalk_20220322_153948209.jpg");
@@ -39,16 +40,18 @@ main {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.52);
   background-blend-mode: multiply;
+  display: flex;
+  flex: 1;
+  position: fixed;
+  z-index: -1;
 }
 .mainText {
-  position: absolute;
-  top: 30vh;
-  right: 40vw;
   font-weight: bold;
   color: white;
-  min-width: 600px;
   font-size: 20px;
   text-align: center;
+  margin: 0 auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .Myname {
   font-size: 50px;

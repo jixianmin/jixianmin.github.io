@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.phoneImg {
+  position: relative;
+}
+@media screen and (max-width: 820px) {
+  .phoneImg {
+    display: none;
+  }
+}
+.image-box {
+  position: absolute;
+  left: 157px;
+  top: 27px;
+  width: 250px;
+  height: 541px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* transition-property: opacity; */
+}
+.image-box img {
+  margin: 0px;
+  border: 0px;
+  transition-duration: 0.5s;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.image-box img.active {
+  opacity: 1;
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+}
+.loginBox {
+  height: 382px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.loginBox > img {
+  width: 175px;
+  height: 51px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.loginBox > input {
+  width: 258px;
+  height: 36px;
+  background-color: rgba(246, 246, 246, 0.966);
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 2px;
+  margin: 3px;
+  font-size: 12px;
+  padding-left: 13px;
+}
+.loginBox > button {
+  width: 268px;
+  height: 30px;
+  margin: 8px 40px;
+  color: white;
+  background-color: rgb(192, 234, 250);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.ordiv {
+  display: flex;
+  flex-direction: row;
+}
+.orline {
+  margin-top: 20px;
+  height: 0px;
+  width: 105px;
+  border-bottom: solid 1px rgb(170, 170, 170);
+}
+.or {
+  width: 50px;
+  font-size: 13px;
+  color: gray;
+  font-weight: bold;
+  text-align: center;
+}
+.facebook {
+  color: rgb(65, 65, 189);
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+.facebook > img {
+  width: 16px;
+  height: 16px;
+}
+.password {
+  font-size: 13px;
+  color: rgb(15, 15, 122);
+}
+.signUp {
+  height: 63px;
+  border: 1px solid #dbdbdb;
+  margin-top: 12px;
+}
+.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginFont {
+  color: rgb(0, 183, 255);
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: rgb(4, 155, 214);
+  font-weight: bold;
+}
+.loginText {
+  text-align: center;
+  margin: 15px;
+  font-size: 14px;
+}
+.downloadsite {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.downloadsite > img {
+  width: 136px;
+  height: 40px;
+  margin: 5px;
+}
+.label {
+  color: rgb(142, 142, 142);
+  fill: rgb(142, 142, 142);
+  height: 12;
+  width: 12;
+}
+@media screen and (max-width: 450px) {
+  .phoneImg {
+    display: none;
+  }
+  .loginBox {
+    width: 100vw;
+    height: 30vh;
+    border: none;
+  }
+  .signUp {
+    border: none;
+    margin: 0 auto;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+footer p {
+  margin: 0;
+  font-size: 12px;
+  color: rgb(161, 161, 161);
+  white-space: nowrap;
+}
+.footerfirstcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footerfirstcontainer > p {
+  margin-right: 15px;
+}
+.footersecondcontainer {
+  display: flex;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footersecondcontainer > p {
+  margin-right: 15px;
+}
+.footerthirdcontainer {
+  display: flex;
+  margin-top: 16px;
+}
+.footerthirdcontainer img {
+  transform: rotate(180deg) translateY(-2px);
+}
