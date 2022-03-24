@@ -1,6 +1,9 @@
 body {
   margin: 0;
 }
+a {
+  color: unset;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -126,11 +129,13 @@ main {
 .loginFont {
   color: rgb(0, 183, 255);
 }
+.loginBTN {
+  color: white;
+}
 a {
   text-decoration: none;
 }
-a:link,
-a:visited {
+.signUp a {
   color: rgb(4, 155, 214);
   font-weight: bold;
 }
