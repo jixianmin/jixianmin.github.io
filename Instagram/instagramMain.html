@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/Instagram/instagramMain.css" />
+    <link rel="stylesheet" href="/Instagram/instagramMaindropdown.css" />
   </head>
   <body>
     <header>
@@ -22,8 +23,44 @@
           <img src="/Instagram/InstagramImg/paperAirplane.png" />
           <img src="/Instagram/InstagramImg/plus.png" />
           <img src="/Instagram/InstagramImg/compass.png" />
-          <img src="/Instagram/InstagramImg/heart.png" />
-          <img src="/Instagram/InstagramImg/user.png" />
+          <img
+            class="user-heart-dropdown"
+            src="/Instagram/InstagramImg/heart.png"
+          />
+          <img class="user-dropdown" src="/Instagram/InstagramImg/user.png" />
+          <div class="user-dropdown-follower">
+            <p class="user-dropdown-today">오늘</p>
+            <div class="dropdown-follower">
+              <img src="/Instagram/InstagramImg/lion.jpg" />
+              <p>
+                길현민님이 회원님을 팔로우하기 시작했습니다.
+                <span class="font-grey">15시간</span>
+              </p>
+              <button>팔로우</button>
+              <div class="heartsmallbox"></div>
+            </div>
+          </div>
+          <div class="user-dropdown-menu">
+            <!-- user-dropdown-menu active -->
+            <div class="user-dropdown-profile">
+              <img src="/Instagram/InstagramImg/user.png" />
+              <p>프로필</p>
+            </div>
+            <div class="user-dropdown-save">
+              <img src="/Instagram/InstagramImg/save.png" />
+              <p>저장됨</p>
+            </div>
+            <div class="user-dropdown-gear">
+              <img src="/Instagram/InstagramImg/gear.png" />
+              <p>설정</p>
+            </div>
+            <div class="user-dropdown-change">
+              <img src="/Instagram/InstagramImg/change.webp" />
+              <p>계정 전환</p>
+            </div>
+            <div class="user-dropdown-log-out"><p>로그아웃</p></div>
+            <div class="user-dropdown-smallbox"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -195,5 +232,6 @@
         <p>© 2022 INSTAGRAM FROM META</p>
       </div>
     </main>
+    <script src="/Instagram/instagramMaindropdown.js"></script>
   </body>
 </html>

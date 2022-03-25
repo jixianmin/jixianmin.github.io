@@ -24,6 +24,7 @@ header {
   width: 103px;
   height: 29px;
   margin-left: 20px;
+  cursor: pointer;
 }
 .search {
   box-sizing: border-box;
@@ -55,6 +56,8 @@ header {
   width: 24px;
   height: 24px;
   margin: 0 13px;
+  padding: 2px solid transparent;
+  cursor: pointer;
 }
 main {
   display: flex;

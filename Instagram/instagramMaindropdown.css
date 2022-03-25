@@ -1,0 +1,121 @@
+.icon {
+  position: relative;
+}
+.user-dropdown-menu {
+  width: 220px;
+  height: 155px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px rgb(179, 179, 179);
+  z-index: 1;
+  display: none;
+}
+.user-dropdown-menu img {
+  width: 13px;
+  height: 13px;
+}
+.user-dropdown-menu p {
+  margin: 5px;
+  font-size: 13px;
+}
+.user-dropdown-profile,
+.user-dropdown-save,
+.user-dropdown-gear,
+.user-dropdown-change {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+}
+.user-dropdown-log-out {
+  border-top: solid 1px rgb(185, 185, 185);
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.user-dropdown-smallbox {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -8px;
+  right: 18px;
+  transform: rotate(45deg);
+  box-shadow: 1px 1px 1px 1px rgb(109, 109, 109);
+  z-index: -2;
+}
+.user-dropdown-profile {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: white;
+  z-index: -1;
+}
+.user-dropdown-menu.active {
+  display: block;
+}
+/* 여기부터는 팔로워 드롭다운 */
+.user-dropdown-follower {
+  width: 450px;
+  height: 320px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  top: 40px;
+  right: 13px;
+  z-index: 1;
+  box-shadow: 1px 1px 1px 1px rgb(109, 109, 109);
+  display: none;
+}
+.user-dropdown-follower.active {
+  display: block;
+}
+.dropdown-follower {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.user-dropdown-follower img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-dropdown-follower p {
+  margin: 0;
+  font-size: 14px;
+}
+.font-grey {
+  color: grey;
+}
+.user-dropdown-today {
+  margin: 0;
+  padding: 8px 12px 8px 12px;
+  font-weight: bolder;
+  font-size: 13px;
+  background-color: white;
+  border-radius: 5px;
+}
+.user-dropdown-follower button {
+  background-color: rgb(0, 183, 255);
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  height: 27px;
+  width: 55px;
+  margin: 10px;
+}
+.heartsmallbox {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -8px;
+  right: 60px;
+  transform: rotate(45deg);
+  box-shadow: 1px 1px 1px 1px rgb(109, 109, 109);
+  z-index: -2;
+}
