@@ -54,6 +54,12 @@
 .user-dropdown-menu.active {
   display: block;
 }
+.user-dropdown.active {
+  border: solid 2px black;
+  padding: 1px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
 /* 여기부터는 팔로워 드롭다운 */
 .user-dropdown-follower {
   width: 450px;

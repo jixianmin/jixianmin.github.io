@@ -21,6 +21,7 @@ let userDropdownMenu = document.querySelector(".user-dropdown-menu"); // 상자
 let userDropdown = document.querySelector(".user-dropdown"); // 이미지
 userDropdown.addEventListener("click", function () {
   userDropdownMenu.classList.toggle("active");
+  userDropdown.classList.toggle("active");
 });
 
 // 팔로워 드롭다운
