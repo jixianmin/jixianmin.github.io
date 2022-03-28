@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/Instagram/instagramMain.css" />
     <link rel="stylesheet" href="/Instagram/instagramMaindropdown.css" />
+    <link rel="stylesheet" href="/Instagram/instagramMainModal.css" />
   </head>
   <body>
     <header>
@@ -21,7 +22,7 @@
         <div class="icon">
           <img src="/Instagram/InstagramImg/home.png" />
           <img src="/Instagram/InstagramImg/paperAirplane.png" />
-          <img src="/Instagram/InstagramImg/plus.png" />
+          <img class="icon-modal" src="/Instagram/InstagramImg/plus.png" />
           <img src="/Instagram/InstagramImg/compass.png" />
           <img
             class="user-heart-dropdown"
@@ -232,6 +233,20 @@
         <p>© 2022 INSTAGRAM FROM META</p>
       </div>
     </main>
+    <div class="modal-wrap">
+      <div class="modal-window">
+        <div class="modal-header">
+          <p>새 게시물 만들기</p>
+        </div>
+        <div class="modal-main">
+          <img src="/Instagram/InstagramImg/camera.webp" />
+          <p>사진과 동영상을 여기에 끌어다 놓으세요</p>
+          <button class="modal-computer">컴퓨터에서 선택</button>
+        </div>
+      </div>
+      <img class="modal-close" src="/Instagram/InstagramImg/close.webp" />
+    </div>
     <script src="/Instagram/instagramMaindropdown.js"></script>
+    <script src="/Instagram/instagramMainModal.js"></script>
   </body>
 </html>

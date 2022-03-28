@@ -23,6 +23,12 @@ userDropdown.addEventListener("click", function () {
   userDropdownMenu.classList.toggle("active");
   userDropdown.classList.toggle("active");
 });
+document.body.addEventListener("click", function (e) {
+  if (!userDropdown.contains(e.target)) {
+    userDropdownMenu.classList.remove("active");
+    userDropdown.classList.remove("active");
+  }
+});
 
 // 팔로워 드롭다운
 /*let userHeartDropdown = document.querySelector(".user-heart-dropdown");
@@ -45,4 +51,9 @@ userHeartDropdown.addEventListener("click", function () {
     userDropdownFollower.classList.add("active");
   }
   //userDropdownFollower.classList.add("active");
+});
+document.body.addEventListener("click", function (e) {
+  if (!userHeartDropdown.contains(e.target)) {
+    userDropdownFollower.classList.remove("active");
+  }
 });
