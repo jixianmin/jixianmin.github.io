@@ -37,3 +37,8 @@ document.addEventListener("keydown", (e) => {
     document.body.classList.remove("active");
   }
 });
+
+const Return = document.querySelector(".instaLogo");
+Return.addEventListener("click", function () {
+  location.reload();
+});
