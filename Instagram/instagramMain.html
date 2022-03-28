@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>인스타 클론 메인</title>
     <link rel="stylesheet" href="/Instagram/instagramMain.css" />
     <link rel="stylesheet" href="/Instagram/instagramMaindropdown.css" />
     <link rel="stylesheet" href="/Instagram/instagramMainModal.css" />
@@ -235,14 +235,21 @@
     </main>
     <div class="modal-wrap">
       <div class="modal-window">
-        <div class="modal-header">
+        <div class="modal-header step1">
           <p>새 게시물 만들기</p>
+        </div>
+        <div class="modal-header step2 hide">
+          <img src="/Instagram/InstagramImg/arrow-left.webp" />
+          <p>자르기</p>
+          <p class="step2-next">다음</p>
         </div>
         <div class="modal-main">
           <img src="/Instagram/InstagramImg/camera.webp" />
           <p>사진과 동영상을 여기에 끌어다 놓으세요</p>
           <button class="modal-computer">컴퓨터에서 선택</button>
+          <input class="input-file" type="file" />
         </div>
+        <img id="img-preview" />
       </div>
       <img class="modal-close" src="/Instagram/InstagramImg/close.webp" />
     </div>

@@ -18,7 +18,6 @@ modalClose.addEventListener("click", function () {
 let modalWindow = document.querySelector(".modal-window");
 
 modalWrap.addEventListener("click", (e) => {
-  console.log(e.target);
   if (!modalWindow.contains(e.target)) {
     modalWrap.classList.remove("active");
     document.body.classList.remove("active");
@@ -41,4 +40,27 @@ document.addEventListener("keydown", (e) => {
 const Return = document.querySelector(".instaLogo");
 Return.addEventListener("click", function () {
   location.reload();
+});
+
+//컴퓨터에서 선택 버튼을 누르면 input-file 클래스 작동
+let computerChoice = document.querySelector(".modal-computer");
+let inputFile = document.querySelector(".input-file");
+computerChoice.addEventListener("click", function () {
+  inputFile.click();
+});
+
+let modalMain = document.querySelector(".modal-main"); //사진 배경위치
+let [modalHeader1, modalHeader2] = document.querySelectorAll(".modal-header"); //새 게시물 만들기 => "<=" "자르기" "다음(파랑색)"으로 변경
+const previewImg = document.querySelector("#img-preview");
+
+inputFile.addEventListener("change", function (e) {
+  const file = e.target.files[0];
+  const reader = new FileReader();
+  reader.onloadend = () => {
+    previewImg.src = reader.result;
+    modalMain.classList.add("hide");
+    modalHeader1.classList.add("hide");
+    modalHeader2.classList.remove("hide");
+  };
+  reader.readAsDataURL(file);
 });
