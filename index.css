@@ -11,7 +11,7 @@ a:visited {
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.52);
+  background-color: rgb(93, 93, 93);
   color: white;
   height: 100vh;
   position: fixed;
@@ -31,6 +31,8 @@ main {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .background-image {
   background-image: url("/indeximg/KakaoTalk_20220322_153948209.jpg");
@@ -44,6 +46,8 @@ main {
   flex: 1;
   position: fixed;
   z-index: -1;
+  top: 0;
+  left: 0;
 }
 .mainText {
   font-weight: bold;
@@ -55,4 +59,51 @@ main {
 }
 .Myname {
   font-size: 50px;
+}
+.bottom-arrow {
+  position: absolute;
+  width: 50px;
+  bottom: 10px;
+  border: solid 2px white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mainone {
+  transition-property: all;
+  transition-duration: 1s;
+}
+.mainone.hide {
+  display: none;
+}
+.maintwo.hide {
+  display: none;
+}
+.maintwo-background-image {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(253, 237, 8, 0.52);
+  display: flex;
+  position: fixed;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.maintwo-background-image img {
+  width: 200px;
+  height: 200px;
+}
+.mainText-maintwo {
+  text-align: center;
+  color: navy;
+  font-weight: bold;
+}
+.top-arrow {
+  position: absolute;
+  width: 50px;
+  top: 10px;
+  border: solid 2px white;
+  border-radius: 50%;
+  cursor: pointer;
 }
